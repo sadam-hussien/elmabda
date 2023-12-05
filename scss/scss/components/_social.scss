@@ -1,0 +1,29 @@
+.social {
+    li {
+        &:not(:last-of-type) {
+            margin-left: $medium;
+        }
+        font-size: 1.5rem;
+
+        &.faceb {
+            a {
+                color: #3b5999;
+            }
+        }
+        &.twitt {
+            a {
+                color: #55acee;
+            }
+        }
+        &.insta {
+            a {
+                color: #e4405f;
+            }
+        }
+        &.youtu {
+            a {
+                color: #cd201f;
+            }
+        }
+    }
+}

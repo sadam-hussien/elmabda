@@ -1,0 +1,57 @@
+.services {
+    background: url(../imgs/bg.jpg);
+
+    .services-box {
+        margin-bottom: $large;
+    }
+
+    // start single-serv
+    .single-serv {
+        margin-bottom: $medium;
+        padding: 0 $medium;
+
+        .img {
+            display: flex;
+            justify-content: center;
+            margin-bottom: $large;
+            padding: $small 0;
+            img {
+                box-shadow: 0 0 0 10px $main-color, 0 0 20px 20px rgba($dark, .4);
+                border-radius: 50%;
+                max-width: 220px;
+                max-height: 240px;
+            }
+        }
+
+        .serv-title {
+            color: $main-color;
+            margin-bottom: $small;
+        }
+
+        .serv-text {
+            line-height: 1.7;
+            word-spacing: 2px;
+            margin-bottom: 0;
+        }
+    }
+    // ==== end single-serv
+
+    .sec-content {
+        .title {
+            margin-bottom: $medium;
+        }
+    }
+
+    .more-serv-link {
+        a {
+            font-size: 1.2rem;
+            color: $dark;
+            opacity: .7;
+            transition: all .5s;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+}

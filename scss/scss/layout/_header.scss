@@ -1,0 +1,98 @@
+.toggle-menu {
+    position: absolute;
+    top: $medium;
+    right: $medium;
+    z-index: 999999;
+    background: rgba($dark, .6);
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    border: none;
+    font-size: 1.4rem;
+    transition: all .5s;
+
+    &:hover {
+        background: rgba($dark, 1);
+    }
+
+    .icon {
+        margin-left: $small;
+    }
+
+}
+
+.main-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transition: all .5s;
+
+    &.active {
+        position: fixed !important;
+        top: 0 !important;
+    }
+
+    nav {
+        background: $main-color;
+        padding: 0 $large;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba($dark, .4), 0 1px 10px rgba($dark, .2);
+        ul {
+            li {
+                padding: $medium;
+                cursor: pointer;
+                color: $white;
+                display: flex;
+                align-items: center;
+                font-size: 1.1rem;
+                transition: all .5s;
+                .icon {
+                    margin-left: $small;
+                }
+
+                &:hover {
+                    background: $white;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        top: 0 !important;
+        width: 100%;
+        height: 100%;
+        background: rgba($dark, .9);
+        transform: translateY(-100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+            transform: translateY(0);
+        }
+        nav {
+            background: transparent;
+            box-shadow: none;
+            ul {
+                flex-direction: column;
+                li {
+                    &:hover {
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.header-sep {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}

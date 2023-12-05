@@ -1,0 +1,19 @@
+// vars
+@import "./scss/vars/vars";
+
+// helpers
+@import "./scss/helpers/global";
+@import "./scss/helpers/title";
+
+// components
+@import "./scss/components/intro";
+@import "./scss/components/about";
+@import "./scss/components/services";
+@import "./scss/components/testim";
+@import "./scss/components/contact";
+@import "./scss/components/social";
+@import "./scss/components/form";
+
+// layout
+@import "./scss/layout/header";
+@import "./scss/layout/footer";

@@ -1,0 +1,23 @@
+.title {
+    padding-right: $large;
+    margin-bottom: $large;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 4px;
+        width: $medium;
+        background: $dark;
+        opacity: .5;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        font-weight: bold;
+        color: $main-color;
+    }
+}

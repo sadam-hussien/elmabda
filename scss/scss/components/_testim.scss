@@ -1,0 +1,54 @@
+.testim {
+    .sec-content {
+        .testim-item {
+            padding: $medium;
+            background: $main-color;
+            border-top: 4px solid $dark;
+            box-shadow: 0 0 10px rgba($dark, .4);
+            color: $white;
+            text-align: center;
+
+            &.two, &.three {
+                margin-top: $large;
+            }
+
+            .img {
+                display: flex;
+                justify-content: center;
+                margin-bottom: $medium;
+                img {
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px rgba($dark, .4);
+                    max-width: 120px;
+                    max-height: 120px;
+                }
+            }
+
+            .text {
+                p {
+                    line-height: 1.7;
+                    font-size: .9rem;
+                    margin-bottom: 0;
+                }
+                .name {
+                    margin-top: $large;
+                    text-align: right;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .carousel-cell {
+        width: 50%;
+        margin-right: $medium;
+
+        @media (max-width: 767px) {
+            width: 75%;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+}
