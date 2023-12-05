@@ -35,6 +35,20 @@
       <span>قائمة</span>
     </button>
 
+    <img
+      src="/imgs/logo-light.jpeg"
+      alt=""
+      class="img-fluid"
+      style="
+        position: absolute;
+        top: 20px;
+        z-index: 999;
+        left: 20px;
+        max-width: 150px;
+        border-radius: 20px;
+      "
+    />
+
     <!-- start header  -->
     <header class="main-header">
       <div class="container d-flex justify-content-center">
@@ -140,7 +154,6 @@
                       7 أيام في الأسبوع من: 8:00 صباحا إلى 10:00 مساء
                     </h6>
                     <h5 class="serv">
-                      <span>احصل على مستشار قانوني مجاني: </span>
                       <span dir="ltr"> +20 107 032 4982 </span>
                     </h5>
                   </div>
@@ -153,7 +166,7 @@
               <div class="col-lg-6 d-none d-lg-flex">
                 <div class="about-img">
                   <img
-                    src="./imgs/intro2.jpg"
+                    src="./imgs/logo-dark.jpeg"
                     alt="lawyer"
                     class="img-fluid"
                     style="border-radius: 10px; margin-bottom: 30px"
@@ -657,7 +670,9 @@
 
     <!-- start footer  -->
     <footer class="text-center">
-      <h5 class="m-0">&copy; كل الحقوق محفوظة</h5>
+      <h5 class="m-0">
+        كل الحقوق محفوظة مبدأ <span id="copyright-year"></span> &copy;
+      </h5>
     </footer>
     <!-- // end footer  -->
 
@@ -676,6 +691,9 @@
 
     <script>
       AOS.init();
+
+      document.getElementById("copyright-year").innerHTML =
+        new Date().getFullYear();
     </script>
   </body>
 </html>
